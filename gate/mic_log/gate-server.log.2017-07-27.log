@@ -1,0 +1,442 @@
+2017-07-27 17:01:05.726 [gate-server,,,] 9640 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@202b0582: startup date [Thu Jul 27 17:01:05 CST 2017]; root of context hierarchy
+2017-07-27 17:01:05.990 [gate-server,,,] 9640 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-07-27 17:01:06.025 [gate-server,,,] 9640 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f914a196] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-27 17:01:07.336 [gate-server,,,] 9640 --- [           main] com.duo.ZuulApplication                  : No active profile set, falling back to default profiles: default
+2017-07-27 17:01:07.359 [gate-server,,,] 9640 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c451c9c: startup date [Thu Jul 27 17:01:07 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@202b0582
+2017-07-27 17:01:08.443 [gate-server,,,] 9640 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'hystrixFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixWebConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration$HystrixWebConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration.class]]
+2017-07-27 17:01:08.946 [gate-server,,,] 9640 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-07-27 17:01:09.276 [gate-server,,,] 9640 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0be2e2fa-145d-3a69-9ede-84b78a6f11ab
+2017-07-27 17:01:09.381 [gate-server,,,] 9640 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-07-27 17:01:09.785 [gate-server,,,] 9640 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f914a196] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-27 17:01:10.782 [gate-server,,,] 9640 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 5555 (http)
+2017-07-27 17:01:10.801 [gate-server,,,] 9640 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-07-27 17:01:10.803 [gate-server,,,] 9640 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-07-27 17:01:11.121 [gate-server,,,] 9640 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-27 17:01:11.121 [gate-server,,,] 9640 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3762 ms
+2017-07-27 17:01:12.770 [gate-server,,,] 9640 --- [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-07-27 17:01:12.771 [gate-server,,,] 9640 --- [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-07-27 17:01:12.782 [gate-server,,,] 9640 --- [ost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2237a790
+2017-07-27 17:01:13.586 [gate-server,,,] 9640 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'zuulServlet' to [/zuul/*]
+2017-07-27 17:01:13.588 [gate-server,,,] 9640 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-27 17:01:13.593 [gate-server,,,] 9640 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-07-27 17:01:13.593 [gate-server,,,] 9640 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-27 17:01:13.593 [gate-server,,,] 9640 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-27 17:01:13.594 [gate-server,,,] 9640 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-27 17:01:13.594 [gate-server,,,] 9640 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-27 17:01:13.594 [gate-server,,,] 9640 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-07-27 17:01:13.594 [gate-server,,,] 9640 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-07-27 17:01:13.621 [gate-server,,,] 9640 --- [ost-startStop-1] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer context listener
+2017-07-27 17:01:15.055 [gate-server,,,] 9640 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c451c9c: startup date [Thu Jul 27 17:01:07 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@202b0582
+2017-07-27 17:01:15.241 [gate-server,,,] 9640 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.duo.Login.login()
+2017-07-27 17:01:15.247 [gate-server,,,] 9640 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-27 17:01:15.248 [gate-server,,,] 9640 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-27 17:01:15.346 [gate-server,,,] 9640 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-27 17:01:15.347 [gate-server,,,] 9640 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-27 17:01:15.427 [gate-server,,,] 9640 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-27 17:01:17.103 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-07-27 17:01:17.108 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-27 17:01:17.109 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2017-07-27 17:01:17.110 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-27 17:01:17.111 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-27 17:01:17.114 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-27 17:01:17.115 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2017-07-27 17:01:17.116 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-07-27 17:01:17.117 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-27 17:01:17.119 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-07-27 17:01:17.120 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-27 17:01:17.125 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-27 17:01:17.128 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-07-27 17:01:17.133 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-27 17:01:17.134 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-07-27 17:01:17.135 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-07-27 17:01:17.136 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-27 17:01:17.136 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-27 17:01:17.139 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/routes || /routes.json],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.cloud.netflix.zuul.RoutesEndpoint.reset()
+2017-07-27 17:01:17.139 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/routes || /routes.json],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.cloud.netflix.zuul.RoutesEndpoint.getRoutes()
+2017-07-27 17:01:17.140 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-07-27 17:01:17.141 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2017-07-27 17:01:17.141 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2017-07-27 17:01:17.142 [gate-server,,,] 9640 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-27 17:01:17.533 [gate-server,,,] 9640 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-07-27 17:01:17.533 [gate-server,,,] 9640 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-07-27 17:01:17.710 [gate-server,,,] 9640 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-27 17:01:17.721 [gate-server,,,] 9640 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'zuulEndpoint' has been autodetected for JMX exposure
+2017-07-27 17:01:17.724 [gate-server,,,] 9640 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-07-27 17:01:17.725 [gate-server,,,] 9640 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-07-27 17:01:17.728 [gate-server,,,] 9640 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-07-27 17:01:17.729 [gate-server,,,] 9640 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2017-07-27 17:01:17.730 [gate-server,,,] 9640 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2017-07-27 17:01:17.734 [gate-server,,,] 9640 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-07-27 17:01:17.751 [gate-server,,,] 9640 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2017-07-27 17:01:17.770 [gate-server,,,] 9640 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-07-27 17:01:17.791 [gate-server,,,] 9640 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'zuulEndpoint': registering with JMX server as MBean [org.springframework.cloud.netflix.zuul:name=zuulEndpoint,type=RoutesEndpoint]
+2017-07-27 17:01:17.795 [gate-server,,,] 9640 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6c451c9c,type=ConfigurationPropertiesRebinder]
+2017-07-27 17:01:17.802 [gate-server,,,] 9640 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2017-07-27 17:01:18.065 [gate-server,,,] 9640 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-07-27 17:01:18.090 [gate-server,,,] 9640 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2017-07-27 17:01:18.333 [gate-server,,,] 9640 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2017-07-27 17:01:18.336 [gate-server,,,] 9640 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2017-07-27 17:01:18.522 [gate-server,,,] 9640 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2017-07-27 17:01:18.522 [gate-server,,,] 9640 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2017-07-27 17:01:18.806 [gate-server,,,] 9640 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-27 17:01:19.111 [gate-server,,,] 9640 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2017-07-27 17:01:19.112 [gate-server,,,] 9640 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2017-07-27 17:01:19.112 [gate-server,,,] 9640 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2017-07-27 17:01:19.112 [gate-server,,,] 9640 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2017-07-27 17:01:19.112 [gate-server,,,] 9640 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2017-07-27 17:01:19.112 [gate-server,,,] 9640 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2017-07-27 17:01:19.112 [gate-server,,,] 9640 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2017-07-27 17:01:19.386 [gate-server,,,] 9640 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2017-07-27 17:01:19.388 [gate-server,,,] 9640 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2017-07-27 17:01:19.392 [gate-server,,,] 9640 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-07-27 17:01:19.394 [gate-server,,,] 9640 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1501146079394 with initial instances count: 3
+2017-07-27 17:01:19.488 [gate-server,,,] 9640 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Registering application gate-server with eureka with status UP
+2017-07-27 17:01:19.488 [gate-server,,,] 9640 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1501146079488, current=UP, previous=STARTING]
+2017-07-27 17:01:19.491 [gate-server,,,] 9640 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATE-SERVER/Josiah-PC:gate-server:5555: registering service...
+2017-07-27 17:01:19.556 [gate-server,,,] 9640 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATE-SERVER/Josiah-PC:gate-server:5555 - registration status: 204
+2017-07-27 17:01:19.586 [gate-server,,,] 9640 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-07-27 17:01:19.591 [gate-server,,,] 9640 --- [           main] ration$HystrixMetricsPollerConfiguration : Starting poller
+2017-07-27 17:01:19.692 [gate-server,,,] 9640 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 5555 (http)
+2017-07-27 17:01:19.694 [gate-server,,,] 9640 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Updating port to 5555
+2017-07-27 17:01:19.701 [gate-server,,,] 9640 --- [           main] com.duo.ZuulApplication                  : Started ZuulApplication in 16.098 seconds (JVM running for 16.819)
+2017-07-27 17:04:49.670 [gate-server,,,] 9640 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATE-SERVER/Josiah-PC:gate-server:5555 - Re-registering apps/GATE-SERVER
+2017-07-27 17:04:49.672 [gate-server,,,] 9640 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATE-SERVER/Josiah-PC:gate-server:5555: registering service...
+2017-07-27 17:04:49.683 [gate-server,,,] 9640 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATE-SERVER/Josiah-PC:gate-server:5555 - registration status: 204
+2017-07-27 17:04:54.706 [gate-server,,,] 9640 --- [nio-5555-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-27 17:04:54.706 [gate-server,,,] 9640 --- [nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-27 17:04:54.761 [gate-server,,,] 9640 --- [nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 54 ms
+2017-07-27 17:04:54.796 [gate-server,,,] 9640 --- [nio-5555-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/user/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2017-07-27 17:04:54.796 [gate-server,,,] 9640 --- [nio-5555-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/menu/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2017-07-27 17:04:54.796 [gate-server,,,] 9640 --- [nio-5555-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/admin/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2017-07-27 17:04:54.796 [gate-server,,,] 9640 --- [nio-5555-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/admin-ui/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2017-07-27 17:04:54.797 [gate-server,,,] 9640 --- [nio-5555-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/user-api/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2017-07-27 17:04:54.843 [gate-server,,,] 9640 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/menu/edit
+2017-07-27 17:04:54.843 [gate-server,,,] 9640 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:04:54.897 [gate-server,,,] 9640 --- [nio-5555-exec-1] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2438e46c: startup date [Thu Jul 27 17:04:54 CST 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c451c9c
+2017-07-27 17:04:54.951 [gate-server,,,] 9640 --- [nio-5555-exec-1] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-07-27 17:04:55.203 [gate-server,,,] 9640 --- [nio-5555-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: admin-ui.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2017-07-27 17:04:55.232 [gate-server,,,] 9640 --- [nio-5555-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-admin-ui
+2017-07-27 17:04:55.292 [gate-server,,,] 9640 --- [nio-5555-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client:admin-ui instantiated a LoadBalancer:DynamicServerListLoadBalancer:{NFLoadBalancer:name=admin-ui,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2017-07-27 17:04:55.301 [gate-server,,,] 9640 --- [nio-5555-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2017-07-27 17:04:55.380 [gate-server,,,] 9640 --- [nio-5555-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: admin-ui.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2017-07-27 17:04:55.383 [gate-server,,,] 9640 --- [nio-5555-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client admin-ui initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=admin-ui,current list of Servers=[Josiah-PC:8766],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:Josiah-PC:8766;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@2a95625f
+2017-07-27 17:04:55.995 [gate-server,,,] 9640 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/modules/layer/default/icon.png
+2017-07-27 17:04:55.996 [gate-server,,,] 9640 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:04:56.018 [gate-server,,,] 9640 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/menu/all
+2017-07-27 17:04:56.018 [gate-server,,,] 9640 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:04:56.328 [gate-server,,,] 9640 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: admin-ui.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2017-07-27 17:05:06.040 [gate-server,,,] 9640 --- [nio-5555-exec-3] o.s.c.n.z.filters.post.SendErrorFilter   : Error during filtering
+
+com.netflix.zuul.exception.ZuulException: Forwarding error
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.handleException(RibbonRoutingFilter.java:170)
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:145)
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.run(RibbonRoutingFilter.java:88)
+	at com.netflix.zuul.ZuulFilter.runFilter(ZuulFilter.java:112)
+	at com.netflix.zuul.FilterProcessor.processZuulFilter(FilterProcessor.java:193)
+	at com.netflix.zuul.FilterProcessor.runFilters(FilterProcessor.java:157)
+	at com.netflix.zuul.FilterProcessor.route(FilterProcessor.java:118)
+	at com.netflix.zuul.ZuulRunner.route(ZuulRunner.java:96)
+	at com.netflix.zuul.http.ZuulServlet.route(ZuulServlet.java:116)
+	at com.netflix.zuul.http.ZuulServlet.service(ZuulServlet.java:81)
+	at org.springframework.web.servlet.mvc.ServletWrappingController.handleRequestInternal(ServletWrappingController.java:157)
+	at org.springframework.cloud.netflix.zuul.web.ZuulController.handleRequest(ZuulController.java:44)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.netflix.hystrix.exception.HystrixRuntimeException: admin-ui timed-out and no fallback available.
+	at com.netflix.hystrix.AbstractCommand$22.call(AbstractCommand.java:805)
+	at com.netflix.hystrix.AbstractCommand$22.call(AbstractCommand.java:790)
+	at rx.internal.operators.OperatorOnErrorResumeNextViaFunction$4.onError(OperatorOnErrorResumeNextViaFunction.java:140)
+	at rx.internal.operators.OnSubscribeDoOnEach$DoOnEachSubscriber.onError(OnSubscribeDoOnEach.java:87)
+	at rx.internal.operators.OnSubscribeDoOnEach$DoOnEachSubscriber.onError(OnSubscribeDoOnEach.java:87)
+	at com.netflix.hystrix.AbstractCommand$DeprecatedOnFallbackHookApplication$1.onError(AbstractCommand.java:1451)
+	at com.netflix.hystrix.AbstractCommand$FallbackHookApplication$1.onError(AbstractCommand.java:1376)
+	at rx.internal.operators.OnSubscribeDoOnEach$DoOnEachSubscriber.onError(OnSubscribeDoOnEach.java:87)
+	at rx.observers.Subscribers$5.onError(Subscribers.java:230)
+	at rx.internal.operators.OnSubscribeThrow.call(OnSubscribeThrow.java:44)
+	at rx.internal.operators.OnSubscribeThrow.call(OnSubscribeThrow.java:28)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OperatorOnErrorResumeNextViaFunction$4.onError(OperatorOnErrorResumeNextViaFunction.java:142)
+	at rx.internal.operators.OnSubscribeDoOnEach$DoOnEachSubscriber.onError(OnSubscribeDoOnEach.java:87)
+	at rx.internal.operators.OnSubscribeDoOnEach$DoOnEachSubscriber.onError(OnSubscribeDoOnEach.java:87)
+	at com.netflix.hystrix.AbstractCommand$HystrixObservableTimeoutOperator$1.run(AbstractCommand.java:1121)
+	at com.netflix.hystrix.strategy.concurrency.HystrixContextRunnable$1.call(HystrixContextRunnable.java:41)
+	at com.netflix.hystrix.strategy.concurrency.HystrixContextRunnable$1.call(HystrixContextRunnable.java:37)
+	at com.netflix.hystrix.strategy.concurrency.HystrixContextRunnable.run(HystrixContextRunnable.java:57)
+	at com.netflix.hystrix.AbstractCommand$HystrixObservableTimeoutOperator$2.tick(AbstractCommand.java:1138)
+	at com.netflix.hystrix.util.HystrixTimer$1.run(HystrixTimer.java:99)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 common frames omitted
+Caused by: java.util.concurrent.TimeoutException: null
+	at com.netflix.hystrix.AbstractCommand.handleTimeoutViaFallback(AbstractCommand.java:980)
+	at com.netflix.hystrix.AbstractCommand.access$500(AbstractCommand.java:59)
+	at com.netflix.hystrix.AbstractCommand$12.call(AbstractCommand.java:595)
+	at com.netflix.hystrix.AbstractCommand$12.call(AbstractCommand.java:587)
+	at rx.internal.operators.OperatorOnErrorResumeNextViaFunction$4.onError(OperatorOnErrorResumeNextViaFunction.java:140)
+	... 15 common frames omitted
+
+2017-07-27 17:05:14.649 [gate-server,,,] 9640 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/menu
+2017-07-27 17:05:14.649 [gate-server,,,] 9640 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.750 [gate-server,,,] 9640 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/plugins/bootstrap-table/css/bootstrap-table.min.css
+2017-07-27 17:05:14.751 [gate-server,,,] 9640 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.755 [gate-server,,,] 9640 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/global.css
+2017-07-27 17:05:14.755 [gate-server,,,] 9640 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.763 [gate-server,,,] 9640 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/plugins/jquery-treegrid/css/jquery.treegrid.css
+2017-07-27 17:05:14.764 [gate-server,,,] 9640 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.787 [gate-server,,,] 9640 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/bootstrap.min.css
+2017-07-27 17:05:14.787 [gate-server,,,] 9640 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.794 [gate-server,,,] 9640 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/bootstrap.min.js
+2017-07-27 17:05:14.794 [gate-server,,,] 9640 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.794 [gate-server,,,] 9640 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/plugins/bootstrap-table/bootstrap-table.min.js
+2017-07-27 17:05:14.794 [gate-server,,,] 9640 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.795 [gate-server,,,] 9640 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/plugins/font-awesome/css/font-awesome.min.css
+2017-07-27 17:05:14.795 [gate-server,,,] 9640 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.797 [gate-server,,,] 9640 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/layui.css
+2017-07-27 17:05:14.798 [gate-server,,,] 9640 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.798 [gate-server,,,] 9640 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/plugins/jquery.min.js
+2017-07-27 17:05:14.798 [gate-server,,,] 9640 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.831 [gate-server,,,] 9640 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/plugins/jquery-treegrid/js/jquery.treegrid.min.js
+2017-07-27 17:05:14.831 [gate-server,,,] 9640 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.846 [gate-server,,,] 9640 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/plugins/jquery-treegrid/js/jquery.treegrid.bootstrap3.js
+2017-07-27 17:05:14.846 [gate-server,,,] 9640 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.847 [gate-server,,,] 9640 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/layui.js
+2017-07-27 17:05:14.847 [gate-server,,,] 9640 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.850 [gate-server,,,] 9640 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/plugins/jquery-treegrid/extension/jquery.treegrid.extension.js
+2017-07-27 17:05:14.850 [gate-server,,,] 9640 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.860 [gate-server,,,] 9640 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/ag/menu/element.js
+2017-07-27 17:05:14.860 [gate-server,,,] 9640 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.866 [gate-server,,,] 9640 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/ag/common/util.js
+2017-07-27 17:05:14.866 [gate-server,,,] 9640 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:14.872 [gate-server,,,] 9640 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/ag/menu/menu.js
+2017-07-27 17:05:14.872 [gate-server,,,] 9640 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:15.380 [gate-server,,,] 9640 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/form.js
+2017-07-27 17:05:15.381 [gate-server,,,] 9640 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:15.429 [gate-server,,,] 9640 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/layer.js
+2017-07-27 17:05:15.430 [gate-server,,,] 9640 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:15.488 [gate-server,,,] 9640 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/modules/layer/default/layer.css
+2017-07-27 17:05:15.488 [gate-server,,,] 9640 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:15.489 [gate-server,,,] 9640 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/layedit.js
+2017-07-27 17:05:15.489 [gate-server,,,] 9640 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:15.535 [gate-server,,,] 9640 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/laydate.js
+2017-07-27 17:05:15.535 [gate-server,,,] 9640 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:15.672 [gate-server,,,] 9640 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/modules/laydate/laydate.css
+2017-07-27 17:05:15.672 [gate-server,,,] 9640 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:15.673 [gate-server,,,] 9640 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/menu/all
+2017-07-27 17:05:15.673 [gate-server,,,] 9640 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-27 17:05:25.678 [gate-server,,,] 9640 --- [nio-5555-exec-7] o.s.c.n.z.filters.post.SendErrorFilter   : Error during filtering
+
+com.netflix.zuul.exception.ZuulException: Forwarding error
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.handleException(RibbonRoutingFilter.java:170)
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:145)
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.run(RibbonRoutingFilter.java:88)
+	at com.netflix.zuul.ZuulFilter.runFilter(ZuulFilter.java:112)
+	at com.netflix.zuul.FilterProcessor.processZuulFilter(FilterProcessor.java:193)
+	at com.netflix.zuul.FilterProcessor.runFilters(FilterProcessor.java:157)
+	at com.netflix.zuul.FilterProcessor.route(FilterProcessor.java:118)
+	at com.netflix.zuul.ZuulRunner.route(ZuulRunner.java:96)
+	at com.netflix.zuul.http.ZuulServlet.route(ZuulServlet.java:116)
+	at com.netflix.zuul.http.ZuulServlet.service(ZuulServlet.java:81)
+	at org.springframework.web.servlet.mvc.ServletWrappingController.handleRequestInternal(ServletWrappingController.java:157)
+	at org.springframework.cloud.netflix.zuul.web.ZuulController.handleRequest(ZuulController.java:44)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.netflix.hystrix.exception.HystrixRuntimeException: admin-ui timed-out and no fallback available.
+	at com.netflix.hystrix.AbstractCommand$22.call(AbstractCommand.java:805)
+	at com.netflix.hystrix.AbstractCommand$22.call(AbstractCommand.java:790)
+	at rx.internal.operators.OperatorOnErrorResumeNextViaFunction$4.onError(OperatorOnErrorResumeNextViaFunction.java:140)
+	at rx.internal.operators.OnSubscribeDoOnEach$DoOnEachSubscriber.onError(OnSubscribeDoOnEach.java:87)
+	at rx.internal.operators.OnSubscribeDoOnEach$DoOnEachSubscriber.onError(OnSubscribeDoOnEach.java:87)
+	at com.netflix.hystrix.AbstractCommand$DeprecatedOnFallbackHookApplication$1.onError(AbstractCommand.java:1451)
+	at com.netflix.hystrix.AbstractCommand$FallbackHookApplication$1.onError(AbstractCommand.java:1376)
+	at rx.internal.operators.OnSubscribeDoOnEach$DoOnEachSubscriber.onError(OnSubscribeDoOnEach.java:87)
+	at rx.observers.Subscribers$5.onError(Subscribers.java:230)
+	at rx.internal.operators.OnSubscribeThrow.call(OnSubscribeThrow.java:44)
+	at rx.internal.operators.OnSubscribeThrow.call(OnSubscribeThrow.java:28)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51)
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OperatorOnErrorResumeNextViaFunction$4.onError(OperatorOnErrorResumeNextViaFunction.java:142)
+	at rx.internal.operators.OnSubscribeDoOnEach$DoOnEachSubscriber.onError(OnSubscribeDoOnEach.java:87)
+	at rx.internal.operators.OnSubscribeDoOnEach$DoOnEachSubscriber.onError(OnSubscribeDoOnEach.java:87)
+	at com.netflix.hystrix.AbstractCommand$HystrixObservableTimeoutOperator$1.run(AbstractCommand.java:1121)
+	at com.netflix.hystrix.strategy.concurrency.HystrixContextRunnable$1.call(HystrixContextRunnable.java:41)
+	at com.netflix.hystrix.strategy.concurrency.HystrixContextRunnable$1.call(HystrixContextRunnable.java:37)
+	at com.netflix.hystrix.strategy.concurrency.HystrixContextRunnable.run(HystrixContextRunnable.java:57)
+	at com.netflix.hystrix.AbstractCommand$HystrixObservableTimeoutOperator$2.tick(AbstractCommand.java:1138)
+	at com.netflix.hystrix.util.HystrixTimer$1.run(HystrixTimer.java:99)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 common frames omitted
+Caused by: java.util.concurrent.TimeoutException: null
+	at com.netflix.hystrix.AbstractCommand.handleTimeoutViaFallback(AbstractCommand.java:980)
+	at com.netflix.hystrix.AbstractCommand.access$500(AbstractCommand.java:59)
+	at com.netflix.hystrix.AbstractCommand$12.call(AbstractCommand.java:595)
+	at com.netflix.hystrix.AbstractCommand$12.call(AbstractCommand.java:587)
+	at rx.internal.operators.OperatorOnErrorResumeNextViaFunction$4.onError(OperatorOnErrorResumeNextViaFunction.java:140)
+	... 15 common frames omitted
+
+2017-07-27 17:06:19.146 [gate-server,,,] 9640 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -1,0 +1,687 @@
+2017-07-20 15:17:33.864 [gate-server,,,] 9148 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@202b0582: startup date [Thu Jul 20 15:17:33 CST 2017]; root of context hierarchy
+2017-07-20 15:17:34.142 [gate-server,,,] 9148 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-07-20 15:17:34.166 [gate-server,,,] 9148 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f914a196] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-20 15:17:35.041 [gate-server,,,] 9148 --- [           main] com.duo.ZuulApplication                  : No active profile set, falling back to default profiles: default
+2017-07-20 15:17:35.075 [gate-server,,,] 9148 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c451c9c: startup date [Thu Jul 20 15:17:35 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@202b0582
+2017-07-20 15:17:36.020 [gate-server,,,] 9148 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'hystrixFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixWebConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration$HystrixWebConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration.class]]
+2017-07-20 15:17:36.394 [gate-server,,,] 9148 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-07-20 15:17:36.676 [gate-server,,,] 9148 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0be2e2fa-145d-3a69-9ede-84b78a6f11ab
+2017-07-20 15:17:36.749 [gate-server,,,] 9148 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-07-20 15:17:37.162 [gate-server,,,] 9148 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f914a196] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-07-20 15:17:38.444 [gate-server,,,] 9148 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 5555 (http)
+2017-07-20 15:17:38.490 [gate-server,,,] 9148 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-07-20 15:17:38.492 [gate-server,,,] 9148 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-07-20 15:17:39.043 [gate-server,,,] 9148 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-20 15:17:39.044 [gate-server,,,] 9148 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3968 ms
+2017-07-20 15:17:41.254 [gate-server,,,] 9148 --- [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-07-20 15:17:41.255 [gate-server,,,] 9148 --- [ost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-07-20 15:17:41.268 [gate-server,,,] 9148 --- [ost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2098825b
+2017-07-20 15:17:42.333 [gate-server,,,] 9148 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'zuulServlet' to [/zuul/*]
+2017-07-20 15:17:42.335 [gate-server,,,] 9148 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-20 15:17:42.340 [gate-server,,,] 9148 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-07-20 15:17:42.341 [gate-server,,,] 9148 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-20 15:17:42.342 [gate-server,,,] 9148 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-20 15:17:42.342 [gate-server,,,] 9148 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-20 15:17:42.342 [gate-server,,,] 9148 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-20 15:17:42.342 [gate-server,,,] 9148 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-07-20 15:17:42.342 [gate-server,,,] 9148 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-07-20 15:17:42.371 [gate-server,,,] 9148 --- [ost-startStop-1] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer context listener
+2017-07-20 15:17:43.958 [gate-server,,,] 9148 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c451c9c: startup date [Thu Jul 20 15:17:35 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@202b0582
+2017-07-20 15:17:44.157 [gate-server,,,] 9148 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.duo.Login.login()
+2017-07-20 15:17:44.161 [gate-server,,,] 9148 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-20 15:17:44.162 [gate-server,,,] 9148 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-20 15:17:44.268 [gate-server,,,] 9148 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-20 15:17:44.268 [gate-server,,,] 9148 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-20 15:17:44.346 [gate-server,,,] 9148 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-20 15:17:46.231 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-07-20 15:17:46.234 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-20 15:17:46.235 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2017-07-20 15:17:46.236 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-20 15:17:46.238 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-20 15:17:46.239 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-20 15:17:46.240 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2017-07-20 15:17:46.241 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-07-20 15:17:46.242 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-20 15:17:46.244 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-07-20 15:17:46.244 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-20 15:17:46.247 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-20 15:17:46.248 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-07-20 15:17:46.252 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-20 15:17:46.252 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-07-20 15:17:46.254 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-07-20 15:17:46.254 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-20 15:17:46.255 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-20 15:17:46.258 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/routes || /routes.json],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.cloud.netflix.zuul.RoutesEndpoint.reset()
+2017-07-20 15:17:46.258 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/routes || /routes.json],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.cloud.netflix.zuul.RoutesEndpoint.getRoutes()
+2017-07-20 15:17:46.259 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-07-20 15:17:46.259 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2017-07-20 15:17:46.259 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2017-07-20 15:17:46.260 [gate-server,,,] 9148 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-07-20 15:17:46.518 [gate-server,,,] 9148 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-07-20 15:17:46.518 [gate-server,,,] 9148 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-07-20 15:17:46.639 [gate-server,,,] 9148 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-20 15:17:46.649 [gate-server,,,] 9148 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'zuulEndpoint' has been autodetected for JMX exposure
+2017-07-20 15:17:46.650 [gate-server,,,] 9148 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-07-20 15:17:46.651 [gate-server,,,] 9148 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-07-20 15:17:46.653 [gate-server,,,] 9148 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-07-20 15:17:46.654 [gate-server,,,] 9148 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2017-07-20 15:17:46.655 [gate-server,,,] 9148 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2017-07-20 15:17:46.658 [gate-server,,,] 9148 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-07-20 15:17:46.674 [gate-server,,,] 9148 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2017-07-20 15:17:46.687 [gate-server,,,] 9148 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-07-20 15:17:46.708 [gate-server,,,] 9148 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'zuulEndpoint': registering with JMX server as MBean [org.springframework.cloud.netflix.zuul:name=zuulEndpoint,type=RoutesEndpoint]
+2017-07-20 15:17:46.733 [gate-server,,,] 9148 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6c451c9c,type=ConfigurationPropertiesRebinder]
+2017-07-20 15:17:46.744 [gate-server,,,] 9148 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2017-07-20 15:17:46.978 [gate-server,,,] 9148 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-07-20 15:17:46.990 [gate-server,,,] 9148 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2017-07-20 15:17:47.197 [gate-server,,,] 9148 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2017-07-20 15:17:47.199 [gate-server,,,] 9148 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2017-07-20 15:17:47.366 [gate-server,,,] 9148 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2017-07-20 15:17:47.366 [gate-server,,,] 9148 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2017-07-20 15:17:47.639 [gate-server,,,] 9148 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 15:17:47.940 [gate-server,,,] 9148 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2017-07-20 15:17:47.940 [gate-server,,,] 9148 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2017-07-20 15:17:47.940 [gate-server,,,] 9148 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2017-07-20 15:17:47.940 [gate-server,,,] 9148 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2017-07-20 15:17:47.940 [gate-server,,,] 9148 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2017-07-20 15:17:47.941 [gate-server,,,] 9148 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2017-07-20 15:17:47.941 [gate-server,,,] 9148 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2017-07-20 15:17:48.182 [gate-server,,,] 9148 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2017-07-20 15:17:48.183 [gate-server,,,] 9148 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2017-07-20 15:17:48.187 [gate-server,,,] 9148 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-07-20 15:17:48.190 [gate-server,,,] 9148 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1500535068190 with initial instances count: 2
+2017-07-20 15:17:48.297 [gate-server,,,] 9148 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Registering application gate-server with eureka with status UP
+2017-07-20 15:17:48.298 [gate-server,,,] 9148 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1500535068298, current=UP, previous=STARTING]
+2017-07-20 15:17:48.300 [gate-server,,,] 9148 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATE-SERVER/Josiah-PC:gate-server:5555: registering service...
+2017-07-20 15:17:48.354 [gate-server,,,] 9148 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATE-SERVER/Josiah-PC:gate-server:5555 - registration status: 204
+2017-07-20 15:17:48.371 [gate-server,,,] 9148 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-07-20 15:17:48.377 [gate-server,,,] 9148 --- [           main] ration$HystrixMetricsPollerConfiguration : Starting poller
+2017-07-20 15:17:48.486 [gate-server,,,] 9148 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 5555 (http)
+2017-07-20 15:17:48.487 [gate-server,,,] 9148 --- [           main] c.n.e.EurekaDiscoveryClientConfiguration : Updating port to 5555
+2017-07-20 15:17:48.492 [gate-server,,,] 9148 --- [           main] com.duo.ZuulApplication                  : Started ZuulApplication in 16.575 seconds (JVM running for 17.206)
+2017-07-20 15:19:13.380 [gate-server,,,] 9148 --- [nio-5555-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1491793106,1491987438,1493276455; _ga=GA1.1.448107835.1496906499] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2017-07-20 15:19:13.391 [gate-server,,,] 9148 --- [nio-5555-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-20 15:19:13.391 [gate-server,,,] 9148 --- [nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-20 15:19:13.451 [gate-server,,,] 9148 --- [nio-5555-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 60 ms
+2017-07-20 15:19:13.530 [gate-server,,,] 9148 --- [nio-5555-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/user/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2017-07-20 15:19:13.530 [gate-server,,,] 9148 --- [nio-5555-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/menu/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2017-07-20 15:19:13.530 [gate-server,,,] 9148 --- [nio-5555-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/admin/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2017-07-20 15:19:13.531 [gate-server,,,] 9148 --- [nio-5555-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/admin-ui/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2017-07-20 15:19:13.531 [gate-server,,,] 9148 --- [nio-5555-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/user-api/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2017-07-20 15:19:13.656 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/index
+2017-07-20 15:19:13.656 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:13.729 [gate-server,,,] 9148 --- [nio-5555-exec-1] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@207581b9: startup date [Thu Jul 20 15:19:13 CST 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6c451c9c
+2017-07-20 15:19:13.869 [gate-server,,,] 9148 --- [nio-5555-exec-1] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-07-20 15:19:14.293 [gate-server,,,] 9148 --- [nio-5555-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: admin-ui.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2017-07-20 15:19:14.320 [gate-server,,,] 9148 --- [nio-5555-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-admin-ui
+2017-07-20 15:19:14.391 [gate-server,,,] 9148 --- [nio-5555-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client:admin-ui instantiated a LoadBalancer:DynamicServerListLoadBalancer:{NFLoadBalancer:name=admin-ui,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2017-07-20 15:19:14.397 [gate-server,,,] 9148 --- [nio-5555-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2017-07-20 15:19:14.443 [gate-server,,,] 9148 --- [nio-5555-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: admin-ui.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2017-07-20 15:19:14.446 [gate-server,,,] 9148 --- [nio-5555-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client admin-ui initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=admin-ui,current list of Servers=[Josiah-PC:8766],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:Josiah-PC:8766;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@f32bbf5
+2017-07-20 15:19:15.403 [gate-server,,,] 9148 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: admin-ui.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2017-07-20 15:19:17.281 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/layui.css
+2017-07-20 15:19:17.284 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:17.325 [gate-server,,,] 9148 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/global.css
+2017-07-20 15:19:17.326 [gate-server,,,] 9148 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:17.327 [gate-server,,,] 9148 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/layui.js
+2017-07-20 15:19:17.327 [gate-server,,,] 9148 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:17.328 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/datas/nav.js
+2017-07-20 15:19:17.328 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:17.347 [gate-server,,,] 9148 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/js/index.js
+2017-07-20 15:19:17.348 [gate-server,,,] 9148 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:17.351 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/plugins/font-awesome/css/font-awesome.min.css
+2017-07-20 15:19:17.352 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:17.454 [gate-server,,,] 9148 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/about
+2017-07-20 15:19:17.462 [gate-server,,,] 9148 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:17.519 [gate-server,,,] 9148 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/images/0.jpg
+2017-07-20 15:19:17.519 [gate-server,,,] 9148 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:18.005 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/layui.js
+2017-07-20 15:19:18.006 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:18.030 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/element.js
+2017-07-20 15:19:18.030 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:18.038 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/plugins/marked/marked.js
+2017-07-20 15:19:18.038 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:18.112 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/layer.js
+2017-07-20 15:19:18.113 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:18.372 [gate-server,,,] 9148 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/jquery.js
+2017-07-20 15:19:18.372 [gate-server,,,] 9148 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:18.422 [gate-server,,,] 9148 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/layer.js
+2017-07-20 15:19:18.423 [gate-server,,,] 9148 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:18.431 [gate-server,,,] 9148 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/modules/layer/default/layer.css
+2017-07-20 15:19:18.431 [gate-server,,,] 9148 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:18.719 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/modules/layer/default/layer.css
+2017-07-20 15:19:18.720 [gate-server,,,] 9148 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/jquery.js
+2017-07-20 15:19:18.721 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:18.723 [gate-server,,,] 9148 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:18.765 [gate-server,,,] 9148 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/js/navbar.js
+2017-07-20 15:19:18.765 [gate-server,,,] 9148 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:18.894 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/README.md
+2017-07-20 15:19:18.894 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:18.938 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/js/common.js
+2017-07-20 15:19:18.939 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:19.025 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/js/tab.js
+2017-07-20 15:19:19.025 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:19.188 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/user/menu
+2017-07-20 15:19:19.188 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:19:22.842 [gate-server,,,] 9148 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/user/system
+2017-07-20 15:19:22.842 [gate-server,,,] 9148 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:20:32.258 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/modules/layer/default/loading-2.gif
+2017-07-20 15:20:32.258 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:20:32.274 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/undefined
+2017-07-20 15:20:32.274 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:20:32.286 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/font/iconfont.woff
+2017-07-20 15:20:32.287 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 15:22:47.949 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 15:27:47.957 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 15:32:47.964 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 15:37:47.970 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 15:42:47.976 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 15:47:47.983 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 15:52:47.990 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 15:57:47.998 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 16:02:48.005 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 16:07:48.013 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 16:12:48.020 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 16:17:48.027 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 16:22:48.034 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 16:27:48.042 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 16:32:48.049 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 16:37:48.057 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 16:42:48.064 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 16:47:48.070 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 16:52:48.076 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 16:54:04.321 [gate-server,,,] 9148 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/index
+2017-07-20 16:54:04.321 [gate-server,,,] 9148 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:04.829 [gate-server,,,] 9148 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/plugins/font-awesome/css/font-awesome.min.css
+2017-07-20 16:54:04.829 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/layui.css
+2017-07-20 16:54:04.830 [gate-server,,,] 9148 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:04.830 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:04.830 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/global.css
+2017-07-20 16:54:04.832 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:04.832 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/datas/nav.js
+2017-07-20 16:54:04.835 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/layui.js
+2017-07-20 16:54:04.842 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:04.843 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:04.848 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/js/index.js
+2017-07-20 16:54:04.848 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:05.979 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/about
+2017-07-20 16:54:05.979 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:06.046 [gate-server,,,] 9148 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/images/0.jpg
+2017-07-20 16:54:06.047 [gate-server,,,] 9148 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:06.438 [gate-server,,,] 9148 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/layui.js
+2017-07-20 16:54:06.438 [gate-server,,,] 9148 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:06.440 [gate-server,,,] 9148 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/plugins/marked/marked.js
+2017-07-20 16:54:06.440 [gate-server,,,] 9148 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:06.500 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/element.js
+2017-07-20 16:54:06.500 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:06.594 [gate-server,,,] 9148 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/layer.js
+2017-07-20 16:54:06.594 [gate-server,,,] 9148 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:06.793 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/layer.js
+2017-07-20 16:54:06.794 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:06.798 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/jquery.js
+2017-07-20 16:54:06.798 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:06.804 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/modules/layer/default/layer.css
+2017-07-20 16:54:06.805 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:06.857 [gate-server,,,] 9148 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/modules/layer/default/layer.css
+2017-07-20 16:54:06.857 [gate-server,,,] 9148 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:06.859 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/jquery.js
+2017-07-20 16:54:06.859 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:07.079 [gate-server,,,] 9148 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/README.md
+2017-07-20 16:54:07.079 [gate-server,,,] 9148 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:07.110 [gate-server,,,] 9148 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/js/navbar.js
+2017-07-20 16:54:07.110 [gate-server,,,] 9148 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:07.227 [gate-server,,,] 9148 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/js/common.js
+2017-07-20 16:54:07.227 [gate-server,,,] 9148 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:07.251 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/js/tab.js
+2017-07-20 16:54:07.251 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:07.336 [gate-server,,,] 9148 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/user/menu
+2017-07-20 16:54:07.336 [gate-server,,,] 9148 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:08.152 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/user/system
+2017-07-20 16:54:08.152 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:31.433 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/index
+2017-07-20 16:54:31.433 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:31.639 [gate-server,,,] 9148 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/layui.css
+2017-07-20 16:54:31.639 [gate-server,,,] 9148 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:31.641 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/global.css
+2017-07-20 16:54:31.641 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:31.661 [gate-server,,,] 9148 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/datas/nav.js
+2017-07-20 16:54:31.661 [gate-server,,,] 9148 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:31.666 [gate-server,,,] 9148 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/js/index.js
+2017-07-20 16:54:31.666 [gate-server,,,] 9148 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:31.667 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/plugins/font-awesome/css/font-awesome.min.css
+2017-07-20 16:54:31.667 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:31.702 [gate-server,,,] 9148 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/about
+2017-07-20 16:54:31.702 [gate-server,,,] 9148 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:31.704 [gate-server,,,] 9148 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/layui.js
+2017-07-20 16:54:31.704 [gate-server,,,] 9148 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:31.705 [gate-server,,,] 9148 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/images/0.jpg
+2017-07-20 16:54:31.705 [gate-server,,,] 9148 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:31.848 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/layui.js
+2017-07-20 16:54:31.849 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:31.852 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/plugins/marked/marked.js
+2017-07-20 16:54:31.852 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:31.856 [gate-server,,,] 9148 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/element.js
+2017-07-20 16:54:31.856 [gate-server,,,] 9148 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:31.861 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/layer.js
+2017-07-20 16:54:31.861 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:32.177 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/modules/layer/default/layer.css
+2017-07-20 16:54:32.177 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:32.182 [gate-server,,,] 9148 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/jquery.js
+2017-07-20 16:54:32.182 [gate-server,,,] 9148 --- [nio-5555-exec-6] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:32.185 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/layer.js
+2017-07-20 16:54:32.185 [gate-server,,,] 9148 --- [nio-5555-exec-4] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:32.369 [gate-server,,,] 9148 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/css/modules/layer/default/layer.css
+2017-07-20 16:54:32.369 [gate-server,,,] 9148 --- [nio-5555-exec-5] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:32.370 [gate-server,,,] 9148 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/lay/modules/jquery.js
+2017-07-20 16:54:32.370 [gate-server,,,] 9148 --- [nio-5555-exec-8] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:32.392 [gate-server,,,] 9148 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/js/navbar.js
+2017-07-20 16:54:32.392 [gate-server,,,] 9148 --- [nio-5555-exec-7] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:32.505 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/js/common.js
+2017-07-20 16:54:32.506 [gate-server,,,] 9148 --- [nio-5555-exec-2] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:32.509 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/README.md
+2017-07-20 16:54:32.510 [gate-server,,,] 9148 --- [nio-5555-exec-3] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:32.631 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/js/tab.js
+2017-07-20 16:54:32.631 [gate-server,,,] 9148 --- [nio-5555-exec-1] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:32.719 [gate-server,,,] 9148 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/user/menu
+2017-07-20 16:54:32.719 [gate-server,,,] 9148 --- [nio-5555-exec-9] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:54:32.824 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : GET request to http://localhost:5555/admin/user/system
+2017-07-20 16:54:32.825 [gate-server,,,] 9148 --- [io-5555-exec-10] com.duo.gate.Myfilter                    : 0:0:0:0:0:0:0:1 access token ok
+2017-07-20 16:57:48.083 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 17:02:48.089 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 17:07:48.097 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 17:12:48.103 [gate-server,,,] 9148 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-07-20 17:13:52.191 [gate-server,,,] 9148 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1064)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:946)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1468)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1435)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 29 common frames omitted
+
+2017-07-20 17:13:52.192 [gate-server,,,] 9148 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2017-07-20 17:13:52.328 [gate-server,,,] 9148 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 26 common frames omitted
+
+2017-07-20 17:13:52.328 [gate-server,,,] 9148 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2017-07-20 17:13:54.196 [gate-server,,,] 9148 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1064)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:946)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1468)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1435)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 30 common frames omitted
+
+2017-07-20 17:13:54.196 [gate-server,,,] 9148 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2017-07-20 17:13:54.201 [gate-server,,,] 9148 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATE-SERVER/Josiah-PC:gate-server:5555 - was unable to refresh its cache! status = Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1064)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:946)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1468)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1435)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+2017-07-20 17:13:54.326 [gate-server,,,] 9148 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 27 common frames omitted
+
+2017-07-20 17:13:54.327 [gate-server,,,] 9148 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2017-07-20 17:13:54.327 [gate-server,,,] 9148 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATE-SERVER/Josiah-PC:gate-server:5555 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+2017-07-20 17:14:26.204 [gate-server,,,] 9148 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1064)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:946)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1468)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1435)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 30 common frames omitted
+
+2017-07-20 17:14:26.205 [gate-server,,,] 9148 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2017-07-20 17:14:26.206 [gate-server,,,] 9148 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATE-SERVER/Josiah-PC:gate-server:5555 - was unable to refresh its cache! status = Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1064)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:946)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1468)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1435)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+2017-07-20 17:14:26.334 [gate-server,,,] 9148 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 27 common frames omitted
+
+2017-07-20 17:14:26.334 [gate-server,,,] 9148 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failure
+2017-07-20 17:14:26.337 [gate-server,,,] 9148 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATE-SERVER/Josiah-PC:gate-server:5555 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:111)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+

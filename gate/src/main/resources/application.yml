@@ -1,0 +1,52 @@
+#服务名称
+spring: 
+  application: 
+    name: gate-server
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+  
+
+
+server: 
+  port: 5555
+#配置用户管理网关
+zuul:
+  routes:
+    user-agent: 
+      path: /user/**
+      serviceId: user-agent
+    menu-agent: 
+      path: /menu/**
+      serviceId: user-agent
+    ui:
+      path: /admin/**
+      serviceId: admin-ui
+
+ribbon:
+  eureka:
+    enabled: true
+    
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+
+#请求和响应GZIP压缩支持
+feign:
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+    response:
+      enabled: true
+#注册到服务中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+      

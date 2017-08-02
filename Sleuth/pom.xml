@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.duo</groupId>
+	<artifactId>sleuth</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Sleuth</name>
+	<description>Demo project for Spring Boot</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.3.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		
+		<start-class>com.duo.SleuthApplication</start-class>
+		<docker.registry.name>zipkin-demo</docker.registry.name><!-- docker.registry的repo名字 -->
+		<docker.registry>10.167.202.164:5000</docker.registry><!-- docker.registry的IP和端口 -->
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin-server</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin-autoconfigure-ui</artifactId>
+		</dependency>
+		
+		<dependency>
+		    <groupId>io.zipkin.java</groupId>
+		    <artifactId>zipkin-storage-mysql</artifactId>
+		    <version>1.19.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<!-- 这是mysql驱动，如果自己配置也行，加这个依赖也行 -->
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+
+	</dependencies>
+<!-- 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Brixton.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+ -->
+ 
+ <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Camden.SR6</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+	
+	
+			<!-- 如果将微服务放在docker容器内，以下是使用maven打包docker 镜像的配置            start   -->
+			<plugin>
+				<!-- docker 打包maven插件的名称  groupId 和 artifactId -->
+				<groupId>com.spotify</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<!-- docker 打包配置 -->
+				<configuration>
+					<!-- docker 创建镜像的名称  
+					docker.registry是docker registry的IP，
+					docker.registry.name 是在 docker registr 创建的repository 名称
+					project.artifactId 项目名称
+					project.version 版本-->
+					<imageName>${docker.registry}/${docker.registry.name}/${project.artifactId}:${project.version}</imageName>
+					<!-- dockerfile 的存放路径  -->
+					<dockerDirectory>src/main/docker</dockerDirectory>
+					<!-- docker 远程服务的ip和端口 (注：如果本机没有安装docker环境，可以使用远程已经安装并启动了dockerd服务来打包docker镜像)  -->
+					<dockerHost>http://10.167.202.164:2375</dockerHost>
+					<!-- dockerCertPath 是在本地windows环境下安装docker环境相打包需要的安全认证  -->
+					<!-- <dockerCertPath>C:\Users\Administrator\.docker\machine\machines\myharbor</dockerCertPath>  -->
+					<!-- 创建完docker image 后是否  push 到docker register，也可以在maven命令中用 -DpushImage 来替代 -->
+					<pushImage>true</pushImage>
+					<!-- docker  resources 指定微服务jar的路径，将微服务的jar包部署到docker容器镜像中   -->
+					<resources>
+						<resource>
+							<targetPath>/</targetPath>
+							<directory>${project.build.directory}</directory>
+							<include>${project.build.finalName}.jar</include>
+						</resource>
+					</resources>
+					<!-- docker 镜像的配置，serverId 和setting.xml 中的 server id 匹配(因为docker registry的登录名和密码比较敏感，因此配置在setting.xml中)-->
+					<!-- <serverId>docker-hub</serverId>
+					<registryUrl>https://index.docker.io/v1/</registryUrl> -->
+					<serverId>aliyun-docker-register</serverId>
+					<registryUrl>registry.cn-hangzhou.aliyuncs.com/test-res/${project.artifactId}</registryUrl>
+				</configuration>
+			</plugin>
+<!-- 如果将微服务放在docker容器内，以下是使用maven打包docker 镜像的配置            end   -->
+		
+			
+	</plugins>
+	</build>
+
+
+</project>
