@@ -1,0 +1,32 @@
+server:
+  port: 9411
+spring:
+  application:
+    name: sleuth-zipkin-stream
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 10.167.202.164:9092
+          zk-nodes: 10.167.202.164:2181
+  datasource: 
+    url: jdbc:mysql://10.167.202.164:3306/zipkin?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: root
+    initialize: true
+    continueOnError: true
+  sleuth:
+    enabled: false
+    sampler: 
+      percentage: 1
+zipkin:
+  storage:
+    type: mysql
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://10.167.202.164:8761/eureka/
