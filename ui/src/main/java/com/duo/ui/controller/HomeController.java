@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * ${DESCRIPTION}
- *
- * @author wanghaobin
- * @create 2017-06-06 13:34
+ * 配置页面跳转
+ * @Class Name HomeController
+ * @author yourname
+ * @Create In 2017年8月22日
  */
 @Controller
 @RequestMapping("")
@@ -85,5 +85,14 @@ public class HomeController {
     public String service(){
         return "service/list";
     }
+    
+    
+    @RequestMapping(value = "tool",method = RequestMethod.GET)
+    public String tool(){
+        return "tool/upload";
+    }
+    
+    
+    
 
 }
